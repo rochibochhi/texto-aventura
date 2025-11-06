@@ -1,7 +1,7 @@
 # Motor de Aventura de Texto
 
-**Nombre**: Rosa Ramirez  
-**Carnet**: 12345678  
+**Nombre**: Rosa Ramirez - Alejandra Mármol 
+**Carnet**: 2010527 - 2010408 
 **Curso**: CI3661 - Laboratorio de Lenguajes de Programación
 
 ## Cómo compilar y ejecutar
