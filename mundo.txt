@@ -1,0 +1,86 @@
+ITEM: llave del guardián
+DESC: La llave de la puerta principal. ¡Con esto podrás escapar de la torre!
+---
+ITEM: diario del guardián
+DESC: "He escondido la llave en el Mirador de Cuervos, al norte del Corazón de la Torre. Si lees esto, ¡huye mientras puedas!"
+---
+ITEM: antorcha encendida
+DESC: Una antorcha con llama azul. Ilumina los pasillos oscuros. Necesaria para ver.
+---
+ITEM: libro de códigos
+DESC: "El Corazón de la Torre es el centro de todo. Desde allí, el Mirador está al ESTE."
+---
+ITEM: amuleto protector
+DESC: Te calma la mente. Úsalo si los susurros te confunden.
+---
+ITEM: manzana seca
+DESC: Te da fuerzas. Guárdala por si la necesitas.
+---
+ITEM: espejo de verdad
+DESC: Refleja tu propósito: encontrar la llave y escapar.
+---
+ITEM: cuerda de cáñamo
+DESC: Inútil aquí. Guárdala solo si quieres.
+---
+ITEM: cuchillo ceremonial
+DESC: Decorativo. No sirve para escapar.
+---
+ITEM: vial de polvo estelar
+DESC: Brillante, pero sin uso práctico.
+---
+SALA: Celda de Piedra
+DESC: Estás atrapado en una celda fría. En el suelo hay un objeto: 'diario del guardián'. Al norte, una puerta conduce a un pasillo oscuro. Toma el diario y ve al norte.
+SALIDA: Norte -> Pasillo de las Sombras
+OBJETO: diario del guardián
+---
+SALA: Pasillo de las Sombras
+DESC: Oscuridad total. En el suelo brilla un objeto: 'antorcha encendida'. Al este, una escalera sube a la Biblioteca Circular. Al oeste, una puerta lleva a un lugar sin salida. Toma la antorcha y ve al este.
+SALIDA: Sur -> Celda de Piedra
+SALIDA: Este -> Biblioteca Circular
+SALIDA: Oeste -> Santuario de las Runas
+OBJETO: antorcha encendida
+---
+SALA: Biblioteca Circular
+DESC: Libros flotan en silencio. Sobre una mesa hay un objeto: 'libro de códigos'. Al norte, un tapiz oculta una puerta al Corazón de la Torre. Toma el libro, revisa el inventario y ve al norte.
+SALIDA: Oeste -> Pasillo de las Sombras
+SALIDA: Norte -> Corazón de la Torre
+OBJETO: libro de códigos
+---
+SALA: Corazón de la Torre
+DESC: ¡Este es el centro de la torre! Aquí hay tres caminos: al este, al Mirador de Cuervos (donde está la llave); al oeste, al Jardín Susurrante (parte del camino); al sur, de regreso a la biblioteca. Ve al este para tomar la llave.
+SALIDA: Sur -> Biblioteca Circular
+SALIDA: Este -> Mirador de Cuervos
+SALIDA: Oeste -> Jardín Susurrante
+OBJETO: amuleto protector
+---
+SALA: Mirador de Cuervos
+DESC: ¡La llave está aquí! Sobre una estatua hay un objeto: 'llave del guardián'. Tómala. Luego, regresa al Corazón de la Torre (sur), ve al oeste al Jardín Susurrante, luego al norte a la Cámara de los Espejos, y finalmente al oeste a la Puerta Principal.
+SALIDA: Sur -> Corazón de la Torre
+OBJETO: llave del guardián
+---
+SALA: Jardín Susurrante
+DESC: Flores murmuran pistas. En el suelo hay un objeto: 'manzana seca'. Al norte, la Cámara de los Espejos (camino a la salida). Al este, de regreso al Corazón. Ve al norte.
+SALIDA: Este -> Corazón de la Torre
+SALIDA: Norte -> Cámara de los Espejos
+OBJETO: manzana seca
+---
+SALA: Cámara de los Espejos
+DESC: Los espejos muestran tu reflejo... y al oeste, la Puerta Principal (¡la salida!). En el suelo hay un objeto: 'espejo de verdad'. Tómalo si quieres, revisa el inventario y luego ve al oeste.
+SALIDA: Sur -> Jardín Susurrante
+SALIDA: Oeste -> Puerta Principal
+OBJETO: espejo de verdad
+---
+SALA: Santuario de las Runas
+DESC: Hermoso, pero este lugar no te ayuda a escapar. Contiene objetos inútiles: 'cuchillo ceremonial'. Regresa al Pasillo de las Sombras (este) y sigue el camino correcto: este -> norte -> este.
+SALIDA: Este -> Pasillo de las Sombras
+SALIDA: Norte -> Altar de los Antiguos
+OBJETO: cuchillo ceremonial
+---
+SALA: Altar de los Antiguos
+DESC: Un lugar de ritual, pero sin salida útil. Aquí solo hay un objeto decorativo: 'vial de polvo estelar'. Vuelve al Santuario (sur), luego al Pasillo, y sigue: este -> norte -> este.
+SALIDA: Sur -> Santuario de las Runas
+OBJETO: vial de polvo estelar
+---
+SALA: Puerta Principal
+DESC: ¡LO LOGRASTE! La llave gira en la cerradura. La puerta se abre y el sol inunda la torre. Has escapado de la Torre del Guardián. Escribe 'salir' para terminar tu aventura.
+SALIDA: Este -> Cámara de los Espejos

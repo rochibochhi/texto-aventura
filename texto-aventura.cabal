@@ -1,0 +1,13 @@
+cabal-version: 2.4
+name: texto-aventura
+version: 0.1.0.0
+
+executable texto-aventura
+  main-is: Main.hs
+  hs-source-dirs: .
+  build-depends:
+      base >= 4.14 && < 5
+    , containers
+    , text
+  ghc-options: -Wall -O2
+  default-language: GHC2021
